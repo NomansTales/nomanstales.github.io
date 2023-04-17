@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Noman's Tales - Home</title>
+</head>
+<body>
+    <header>
+        <img src="logo-with-name.svg" alt="Noman's Tales Logo" class="logo">
+    </header>
+    <main>
+        <section class="section-container">
+            <h2>Under Construction</h2>
+            <p>We're currently building this page. In the meantime, you can <a href="all-links.html">view all links here</a>.</p>
+        </section>
+    </main>
+    <script>
+        function setMainContentOffset() {
+            const header = document.querySelector('header');
+            const body = document.querySelector('body');
+            const headerHeight = header.offsetHeight;
+            body.style.paddingTop = headerHeight + 'px';
+        }
+
+        window.addEventListener('load', setMainContentOffset);
+        window.addEventListener('resize', setMainContentOffset);
+    </script>
+</body>
+</html>

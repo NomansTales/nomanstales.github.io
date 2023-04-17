@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Noman's Tales - All Links</title>
+</head>
+<body>
+    <header>
+        <img src="logo-with-name.svg" alt="Noman's Tales Logo" class="logo">
+    </header>
+    <main>
+        <section class="section-container">
+            <h2>Shop</h2>
+            <a href="https://www.etsy.com/shop/NomansTales" class="button-link">
+                <span class="link-icon">🔗</span> Etsy Store
+            </a>
+        </section>
+        <section class="section-container">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com/NomansTales" class="button-link">
+                <span class="link-icon">🔗</span> Facebook
+            </a>
+	    <a href="https://www.instagram.com/nomanstalesofficial/" class="button-link">
+                <span class="link-icon">🔗</span> Instagram
+            </a>
+            <a href="https://www.youtube.com/@nomanstales" class="button-link">
+                <span class="link-icon">🔗</span> YouTube
+            </a>
+            <a href="https://rumble.com/c/c-2380534" class="button-link">
+                <span class="link-icon">🔗</span> Rumble
+            </a>
+            <a href="https://twitter.com/NomanTales" class="button-link">
+                <span class="link-icon">🔗</span> Twitter
+            </a>
+        </section>
+	<section class="section-container">
+            <h2>Other</h2>
+	    <a href="https://signup.nomanstales.com" class="button-link">
+                <span class="link-icon">🔗</span> Newsletter
+            </a>
+	</section>
+    </main>
+    <script>
+        function setMainContentOffset() {
+            const header = document.querySelector('header');
+            const body = document.querySelector('body');
+            const headerHeight = header.offsetHeight;
+            body.style.paddingTop = headerHeight + 'px';
+        }
+
+        window.addEventListener('load', setMainContentOffset);
+        window.addEventListener('resize', setMainContentOffset);
+    </script>
+
+</body>
+</html>
