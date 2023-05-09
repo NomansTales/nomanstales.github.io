@@ -1,0 +1,4 @@
+baseURL = "https://nomanstales.com/"
+languageCode = "en-us"
+title = "Noman's Tales"
+publishDir = "docs"
