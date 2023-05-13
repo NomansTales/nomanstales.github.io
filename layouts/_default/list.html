@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="{{ .Site.Title }} | {{ .Title }}" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/logo-with-name.png" />
     <link rel="stylesheet" href="/css/styles.css">
     <title>{{ .Site.Title }} | {{ .Title }} </title>
     <link rel="icon" type="image/png" href="/images/icon.png">
