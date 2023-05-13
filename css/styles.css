@@ -1,0 +1,212 @@
+/*
+primary palette
+---
+URL: https://www.canva.com/colors/color-palettes/outdoor-dinner-party/
+colors: #4A4138 (ebony), #F7F7F9 (white), #B0CBB0 (celadon), #CCB28F (nude)
+
+secondary palette
+---
+URL: https://www.canva.com/colors/color-palettes/birth-spring/
+colors: #BCA88E (nude), #E3E8E9 (misty blue/white-ish), #9DA993 (sage green), #E4B4B4 (rosewater)
+*/
+
+@media screen and (min-width: 576px) {
+    main > section {
+	max-width: 100%;
+    }
+
+    .footer-sections > * {
+	max-width: 100%;
+    }
+
+    .book-details {
+	max-width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    main > section {
+	max-width: 75%;
+    }
+
+    .footer-sections > * {
+	max-width: 33%;
+    }
+
+    .two-col {
+	max-width: 100%;
+    }
+
+    .book-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .book-image, .book-details {
+        flex: 1 1 0;
+    }
+
+    .book-details {
+	max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .two-col {
+	max-width: 75%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F7F9;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+    max-width: 155px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.h-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.v-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+    color: #4A4138;
+}
+
+p, ol li{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #4A4138;
+}
+
+a {
+    font-size: 1em;
+    color: #4A4138;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(74, 65, 56, 0.5), rgba(74, 65, 56, 1), rgba(74, 65, 56, 0.5));
+    width: 10%;
+    margin: 50px;
+}
+
+
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4A4138;
+    background-color: #B0CBB0;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+}
+
+.link-icon {
+    margin-right: 12px;
+}
+
+.button-link:hover {
+    background-color: #9abd9a;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #CCB28F;
+    padding: 50px;
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-sections > * {
+    padding: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* home page styles */
+
+.book-image {
+    max-width: 400px;
+}
+
+.book-image img {
+    width: 100%;
+}
+
+.callout {
+    max-width: 350px;
+    padding: 25px;
+    margin: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
