@@ -1,0 +1,68 @@
+---
+title: "Four Brother Sheep - Children's Book"
+description: "Buy Four Brother Sheep, an enchanting children's book about the adventures of four sheep siblings learning valuable life lessons. Available in hardback and ebook formats."
+---
+<main>
+  <section class="h-container two-col wrap" style="justify-content: center;">
+    <div class="book-image" style="float: left;">
+      <img src="/images/four-brother-sheep-book.jpg" alt="Four Brother Sheep Book">
+    </div>
+    <div class="v-container book-details">
+      <h1>Four Brother Sheep</h1>
+      <p>Embark on a captivating adventure with the "Four Brother Sheep" as they learn valuable life lessons about the importance of obeying their parents. This enchanting tale follows the misadventures of four sheep siblings - Selfish, Stubborn, Pride, and Prudence - as they explore the world around them, discovering the consequences of not heeding their parents' advice.</p>
+      <br>
+      <p>When danger lurks and their brothers are in peril, can the youngest and wisest sheep, Prudence, save the day by making the right choices? This heartwarming story teaches children the significance of listening to their parents while providing an engaging and beautifully illustrated narrative for the whole family to enjoy.</p>
+    </div>
+  </section>
+
+  <section id="coming-soon" class="v-container callout">
+    <h2>Books Coming May 15th</h2>
+    <p>Join our newsletter for a chance to win a free copy!</p>
+    <a href="{{< link/newsletter >}}" class="button-link">Sign Up</a>
+  </section>
+  
+  <section id="buy-books" style="display: none">
+    <div class="h-container wrap" style="justify-content: space-evenly">
+      <div class="v-container callout">
+	<h2>Hardback - $21.72</h2>
+	<p>Experience the exquisite hardback edition of "Four Brother Sheep." Bound in a stunning matte finish with premium pages, this book is a treasure trove of beautiful illustrations that bring the heartwarming tale to life. A true collector's piece for your family's library.</p>
+	<a href="https://www.lulu.com/hardback-link" class="button-link" target="_blank">Buy Now</a>
+      </div>
+      <div class="v-container callout">
+	<h2>eBook - $9.99</h2>
+	<p>Experience the convenience and vibrancy of "Four Brother Sheep" in its eBook edition. Enjoy this heartwarming tale on any device, anytime, anywhere. With beautifully rendered illustrations and an engaging narrative, it's the perfect digital companion for young readers on the go. A delightful journey of family, obedience, and wisdom is now just a tap away!</p>
+	<a href="https://www.lulu.com/ebook-link" class="button-link" target="_blank">Buy Now</a>
+    </div>
+  </section>
+
+  <section>
+    <p><em>*All purchases are final. We will be happy to replace damaged goods when notified within a week of delivery.</em></p>
+  </section>
+
+  <hr>
+
+  <section class="v-container">
+    <h2>Watch the Video Story</h2>
+    <div class="h-container wrap" style="justify-content: space-evenly">
+      <a href="https://www.youtube.com/watch?v=iuh71C93HKM&t=1s" class="button-link" target="_blank">YouTube</a>
+      <a href="https://rumble.com/v29ykv4-four-brother-sheep.html" class="button-link" target="_blank">Rumble</a>
+      <a href="https://www.facebook.com/NomansTales/videos/1148785392478946/" class="button-link" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/reel/CoydP7BDDAv/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="button-link" target="_blank">Instagram</a>
+    </div>
+  </section>
+</main>
+
+<script>
+    window.onload = function() {
+        var now = new Date();
+        var launchDate = new Date(2023, 4, 15); // Remember, months are 0-indexed in JavaScript Date.
+        var comingSoonSection = document.getElementById('coming-soon');
+        var buyBooksSection = document.getElementById('buy-books');
+
+        if (now >= launchDate) {
+            // If today's date is on or after the launch date, hide the "coming soon" section and show the "buy books" section.
+            if (comingSoonSection) comingSoonSection.style.display = 'none';
+            if (buyBooksSection) buyBooksSection.style.display = 'block';
+        }
+    };
+</script>

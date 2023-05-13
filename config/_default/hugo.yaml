@@ -1,0 +1,14 @@
+baseURL: "https://nomanstales.com/"
+languageCode: "en-us"
+title: "Noman's Tales"
+publishDir: "public"
+
+params:
+  newsletterURL: "https://signup.nomanstales.com"
+  etsy: "https://www.etsy.com/shop/NomansTales"
+  facebook: "https://www.facebook.com/NomansTales"
+  instagram: "https://www.instagram.com/nomanstalesofficial/"
+  twitter: "https://twitter.com/NomanTales"
+  youtube: "https://www.youtube.com/@nomanstales"
+  rumble: "https://rumble.com/c/c-2380534"
+  

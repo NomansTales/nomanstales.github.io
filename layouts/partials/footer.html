@@ -1,27 +1,24 @@
 <footer>
     <div class="footer-sections">
-        <div class="social-media">
+        <section>
             <h3>Social Media</h3>
             <p>
-                <a href="https://www.youtube.com/@nomanstales" target="_blank">YouTube</a> |
-                <a href="https://rumble.com/c/c-2380534" target="_blank">Rumble</a> |
-                <a href="https://www.facebook.com/NomansTales" target="_blank">Facebook</a> |
-                <a href="https://www.instagram.com/nomanstalesofficial/" target="_blank">Instagram</a> |
-                <a href="https://twitter.com/NomanTales" target="_blank">Twitter</a>
+                <a href="{{ .Site.Params.youtube }}" target="_blank">YouTube</a> |
+                <a href="{{ .Site.Params.rumble }}" target="_blank">Rumble</a> |
+                <a href="{{ .Site.Params.facebook }}" target="_blank">Facebook</a> |
+                <a href="{{ .Site.Params.instagram }}" target="_blank">Instagram</a> |
+                <a href="{{ .Site.Params.twitter }}" target="_blank">Twitter</a>
             </p>
-        </div>
-        <div class="newsletter">
-            <h3>Newsletter</h3>
-            <p>
-                <a href="your-newsletter-signup-link" target="_blank">Sign up for our newsletter</a>
-            </p>
-        </div>
-        <div class="etsy-store">
-            <h3>Etsy Store</h3>
-            <p>
-                <a href="https://www.etsy.com/shop/NomansTales" target="_blank">Visit our Etsy store</a>
-            </p>
-        </div>
+        </section>
+        <section>
+          <h3>Useful Links</h3>
+	  <p>
+	    <a href="{{ (.Site.GetPage "page" "about").Permalink }}">About</a> |
+	    <a href="{{ (.Site.GetPage "page" "contact").Permalink }}">Contact</a> |
+            <a href="{{ .Site.Params.newsletterURL }}" target="_blank">Newsletter</a> |
+            <a href="{{ .Site.Params.etsy }}" target="_blank">Etsy Store</a>
+	  </p>
+        </section>
     </div>
     <div class="copyright">
         <p>
