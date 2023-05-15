@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Noman&#39;s Tales | Four Brother Sheep - Children&#39;s Book" />
-    <meta property="og:description" content="Buy Four Brother Sheep, an enchanting children&#39;s book about the adventures of four sheep siblings learning valuable life lessons. Available in hardback and ebook formats." />
-    <meta property="og:image" content="https://nomanstales.com//images/logo-with-name.png" />
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Noman&#39;s Tales | Four Brother Sheep - Children&#39;s Book </title>
-    <link rel="icon" type="image/png" href="/images/icon.png">
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VP416TL4F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VP416TL4F');
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Noman&#39;s Tales | Four Brother Sheep - Children&#39;s Book" />
+  <meta property="og:description" content="Buy Four Brother Sheep, an enchanting children&#39;s book about the adventures of four sheep siblings learning valuable life lessons. Available in hardback and ebook formats." />
+  <meta property="og:image" content="https://nomanstales.com//images/logo-with-name.png" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Noman&#39;s Tales | Four Brother Sheep - Children&#39;s Book </title>
+  <link rel="icon" type="image/png" href="/images/icon.png">
 </head>
 <body>
-    <header>
+  <header>
   <a href=/><img src="/images/logo-with-name.png" alt="Noman's Tales Logo" class="logo"></a>
 </header>
 
-    <main>
+  <main>
   <section class="h-container two-col wrap" style="justify-content: center;">
     <div class="book-image" style="float: left;">
       <img src="/images/four-brother-sheep-book.jpg" alt="Four Brother Sheep Book">
@@ -27,15 +38,8 @@
       <p>When danger lurks and their brothers are in peril, can the youngest and wisest sheep, Prudence, save the day by making the right choices? This heartwarming story teaches children the significance of listening to their parents while providing an engaging and beautifully illustrated narrative for the whole family to enjoy.</p>
     </div>
   </section>
-
-  <section id="coming-soon" class="v-container callout">
-    <h2>Books Coming May 15th</h2>
-    <p>Join our newsletter for a chance to win a free copy!</p>
-    <a href="https://signup.nomanstales.com
-" class="button-link">Sign Up</a>
-  </section>
   
-  <section id="buy-books" style="display: none">
+  <section id="buy-books">
     <div class="h-container wrap" style="justify-content: space-evenly">
       <div class="v-container callout">
 	<h2>Hardback - $21.79</h2>
@@ -67,22 +71,8 @@
   </section>
 </main>
 
-<script>
-    window.onload = function() {
-        var now = new Date();
-        var launchDate = new Date(2023, 4, 15); // Remember, months are 0-indexed in JavaScript Date.
-        var comingSoonSection = document.getElementById('coming-soon');
-        var buyBooksSection = document.getElementById('buy-books');
 
-        if (now >= launchDate) {
-            // If today's date is on or after the launch date, hide the "coming soon" section and show the "buy books" section.
-            if (comingSoonSection) comingSoonSection.style.display = 'none';
-            if (buyBooksSection) buyBooksSection.style.display = 'block';
-        }
-    };
-</script>
-
-    <footer>
+  <footer>
     <div class="footer-sections">
         <section>
             <h3>Social Media</h3>
@@ -112,6 +102,6 @@
 </footer>
 
 
-    <script src="/js/main-content-offset.js"></script>
+  <script src="/js/main-content-offset.js"></script>
 </body>
 </html>
